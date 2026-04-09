@@ -1,2 +1,32 @@
-# a-share-momentum-factor-research
-Cross-sectional factor research on A-share momentum and reversal effect
+# A股动量与反转因子研究
+
+## 项目简介
+本项目研究A股市场中短周期动量因子的横截面预测能力，发现其呈现明显的短期反转特征。
+
+## 方法
+- 构建20日动量因子
+- 去极值、标准化、行业/市值中性化、标准化
+- Rank IC分析
+- 分层回测（10分组）
+- 横截面回归
+
+## 核心结果
+- Rank IC ≈ -0.05
+- IC正比例 ≈ 30%
+- 分层回测不具单调性
+- 回归结果显著
+
+结论：A股短周期动量呈现反转效应
+
+## 回测设定
+- 股票池：A股全市场
+- 调仓周期：20日
+- 权重方式：等权
+
+## 文件说明
+- report/：研究报告
+- notebook/：完整回测过程
+- src/：核心代码
+
+## 技术栈
+Python, pandas, numpy, statsmodels
